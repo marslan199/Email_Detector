@@ -22,4 +22,5 @@ df = pd.read_csv("emails.csv")
 df["labelling"] = df["label"].map({"ham" : 0 , "spam" : 1})
 print(df.head())
 print(df.tail())
+df.to_csv("emails.csv" , index=False)
 

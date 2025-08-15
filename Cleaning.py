@@ -9,6 +9,6 @@ def clean(text):
 
 df = pd.read_csv("emails.csv")
 df['clean_email'] = df['email'].apply(clean)
-
+# df.to_csv("emails.csv" , index=False)
 print(df.head())
 
